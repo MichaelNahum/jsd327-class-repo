@@ -1,5 +1,21 @@
 # Project Overview
 
+Endorsement Geo-Tracker.
+
+APIs involved: Gmail, Google Map 
+
+SPA setup: Left 70-75% an embedded GoogleMap, the right 25-30% an empty text column with two input boxes at the top of the screen: location, and window.
+
+UX: User types location name into the first input box, and how many hours back they want to search (the latter feature will be added later). The map will populate with pins corresponding to endorsement locations (a post-MVP feature will include a hover event producing a popup containing the full text of the endorsement). The right column will populate with divs containing all endorsements to match the search criteria within the last 24 hours. 
+
+Backend logic: upon the submit event, an ajax call to the gmail api will get all endorsement emails containing the search term. Each endorsement will be parsed for location data, source text (non-English), caption text (our translated summary), and timestamp. Location data will be used to generate pins in the map-component, while divs containing the main text and timestamp will populate the text column to the right. 
+
+Resources: 
+https://developers.google.com/maps/documentation/javascript/tutorial
+https://developers.google.com/apps-script/reference/gmail/gmail-thread
+
+
+
 ## Project Schedule
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
