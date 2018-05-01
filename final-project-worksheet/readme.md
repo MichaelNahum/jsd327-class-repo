@@ -11,8 +11,8 @@ UX: User types location name into the first input box, and how many hours back t
 Backend logic: upon the submit event, an ajax call to the gmail api will get all endorsement emails containing the search term. Each endorsement will be parsed for location data, source text (non-English), caption text (our translated summary), and timestamp. Location data will be used to generate pins in the map-component, while divs containing the main text and timestamp will populate the text column to the right. 
 
 Resources: 
-https://developers.google.com/maps/documentation/javascript/tutorial
-https://developers.google.com/apps-script/reference/gmail/gmail-thread
+[Google Maps Documentation](https://developers.google.com/maps/documentation/javascript/tutorial)
+[Gmail Documentation](https://developers.google.com/apps-script/reference/gmail/gmail-thread)
 
 
 
